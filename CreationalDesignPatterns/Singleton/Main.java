@@ -5,6 +5,7 @@ public class Main {
         SingletonClass singletonClass2 = SingletonClass.getSingletonInstance();
         System.out.println("Singleton object2 created");
 
+        //check
         if(singletonClass1.equals(singletonClass2)) {
             System.out.println("Object2 is the reference of object1");
         }
