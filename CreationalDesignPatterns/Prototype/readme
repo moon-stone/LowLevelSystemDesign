@@ -1,0 +1,2 @@
+This pattern is used to create a prototype of a object. We used to create a different objects with all the parameters same. We will be
+getting prototype by using the class itself as some private fileds can't be copied from outside the class.
