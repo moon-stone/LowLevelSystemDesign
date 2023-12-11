@@ -1,1 +1,1 @@
-Used to hode system complexities from the client
+Used to hide system complexities from the client
