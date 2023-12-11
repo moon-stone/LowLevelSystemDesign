@@ -1,0 +1,2 @@
+This pattern is used to create a single instance of the class only. It will be utilised everytime once it is created. We generally used this
+type of pattern in database connections.
