@@ -1,0 +1,1 @@
+This pattern helps to decouple an abstraction from its implementation so that two can very independently
