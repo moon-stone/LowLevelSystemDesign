@@ -22,6 +22,7 @@ public class EntranceGate {
     }
 
     public void setParkingSpotManager(List<ParkingSpot> parkingSpotList, VehicleType vehicleType){
+        System.out.println("EntranceGate : ParkingSpot manager set");
         parkingSpotManager = parkingSpotFactory.getParkingManager(parkingSpotList, vehicleType);
     }
 
@@ -33,6 +34,7 @@ public class EntranceGate {
     }
 
     public int bookParkingSpace(Vehicle vehicle){
+        System.out.println("EntranceGate : bookParkingSpace for : "+vehicle.getVehicleNumber());
         return parkingSpotManager.parkVehicle(vehicle);
     }
 

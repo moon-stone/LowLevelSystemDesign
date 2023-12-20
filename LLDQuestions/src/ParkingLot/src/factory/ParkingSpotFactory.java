@@ -6,12 +6,16 @@ import ParkingLot.src.spotManager.*;
 import java.util.List;
 
 public class ParkingSpotFactory {
-
+    ParkingSpotManager parkingSpotManager;
     public ParkingSpotManager getParkingManager(List<ParkingSpot> parkingSpotList, VehicleType wheelerType){
         switch (wheelerType){
-            case VehicleType.FourWheeler -> new FourWheelerManager(parkingSpotList);
-            case VehicleType.TwoWheeler -> new TwoWheelerManager(parkingSpotList);
+            case VehicleType.FourWheeler -> {
+                parkingSpotManager = new FourWheelerManager(parkingSpotList);
+            }
+            case VehicleType.TwoWheeler -> {
+                parkingSpotManager = new TwoWheelerManager(parkingSpotList);
+            }
         }
-        return null;
+        return parkingSpotManager;
     }
 }

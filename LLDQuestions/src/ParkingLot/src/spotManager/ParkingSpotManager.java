@@ -39,7 +39,7 @@ public class ParkingSpotManager {
         if(parkingSpot != null){
             vehicleParkedSpot.put(vehicle, parkingSpot);
             parkingSpotId = parkingSpot.parkVehicle(vehicle);
-            System.out.println("VehicleParked at : "+parkingSpotId);
+            System.out.println("ParkingSpotManager :"+vehicle.getVehicleNumber()+" Parked at : "+parkingSpotId);
             return parkingSpotId;
         }
         return Constants.NOT_AVAILABLE;
