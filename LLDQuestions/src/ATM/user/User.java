@@ -1,17 +1,19 @@
 package ATM.user;
 
 public class User {
-    String name;
     BankAccount bankAccount;
     DebitCard debitCard;
 
-    public User(String name, BankAccount bankAccount, DebitCard debitCard){
-        this.name = name;
+    public User(BankAccount bankAccount, DebitCard debitCard){
         this.bankAccount = bankAccount;
         this.debitCard = debitCard;
     }
 
     public BankAccount getBankAccountDetails(){
         return bankAccount;
+    }
+
+    public DebitCard getDebitCard(){
+        return debitCard;
     }
 }

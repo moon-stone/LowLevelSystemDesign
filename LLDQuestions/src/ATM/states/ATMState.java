@@ -25,11 +25,15 @@ public abstract class ATMState {
         System.out.println("Something went wrong");
     }
 
+    public void pinChange(ATM atm, DebitCard debitCard, int newPin){
+        System.out.println("Something went wrong");
+    }
+
     public void Exit(ATM atm, DebitCard debitCard){
         System.out.println("Something went wrong");
     }
 
-    public void removeCard(ATM atm){
+    public void removeCard(){
         System.out.println("Something went wrong");
     }
 }
